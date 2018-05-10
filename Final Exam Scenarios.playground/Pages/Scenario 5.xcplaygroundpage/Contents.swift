@@ -46,6 +46,23 @@ let purple = Color(hue: 309, saturation: 78, brightness: 64, alpha: 100)
 let offWhite = Color(hue: 85, saturation: 4, brightness: 89, alpha: 100)
 
 // Begin your solution below...
+// Draw background
+canvas.fillColor = Color.black
+canvas.drawRectangle(centreX: 200, centreY: 300, width: 400, height: 600, borderWidth: 0)
+
+// Draw Arrows
+
+canvas.lineColor = Color.init(hue: 309, saturation: 78, brightness: 64, alpha: 100)
+canvas.defaultLineWidth = 15
+
+//Draw loop for arrow
+for i in stride(from: 0, through: 325, by: 80){
+    canvas.drawLine(fromX: 8, fromY: 8, toX:8, toY: 60)
+    canvas.drawLine(fromX: 10, fromY: 10, toX: 70, toY: 70)
+    canvas.drawLine(fromX: 5, fromY: 5, toX: 60, toY: 5)
+    
+
+}
 
 
 /*:
